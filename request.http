@@ -1,0 +1,74 @@
+# Todas los libros
+GET http://localhost:8030/
+
+# Obtener libro por id
+GET http://localhost:8030/1
+
+# Crear un nuevo libro
+POST http://localhost:8030/
+Content-Type: application/json
+{
+   "id_author": 3,
+   "id_category": 1,
+   "title": "El conde de montecristo",
+   "pages": 500
+}
+
+# Actualizar un libro
+PUT http://localhost:8030/1
+Content-Type: application/json
+{
+   "id_author": 1,
+   "id_category": 1,
+   "title": "Actualizacion uno",
+   "pages": 500
+}
+
+# Eliminar un libro
+DELETE http://localhost:8030/1
+
+# Todas los autores
+GET http://localhost:8030/author
+
+# Obtener autor por id
+GET http://localhost:8030/author/3
+
+# Crear un nuevo autor
+POST http://localhost:8030/author
+Content-Type: application/json
+{
+   "name": "John Doe"
+}
+
+# Actualizar un autor
+PUT http://localhost:8030/author/2
+Content-Type: application/json
+{
+   "name": "Jhony Bravo 2"
+}
+
+# Eliminar un autor
+DELETE http://localhost:8030/author/2
+
+# Todas las categorias
+GET http://localhost:8030/category
+
+# Obtener categoria por id
+GET http://localhost:8030/category/1
+
+# Crear una nueva categoria
+POST http://localhost:8030/category
+Content-Type: application/json
+{
+   "name": "Ciencia ficcion"
+}
+
+# Actualizar una categoria
+PUT http://localhost:8030/category/4
+Content-Type: application/json
+{
+   "name": "Novelas"
+}
+
+# Eliminar una categoria
+DELETE http://localhost:3003/category/1
